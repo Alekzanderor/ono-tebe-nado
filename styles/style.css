@@ -1,9 +1,7 @@
-/* место для вашего кода */
 body {
   font-size: 18px;
   max-width: 1100px;
   width: 1110px;
-  /*background-color: green;*/
   padding-top: 92px;
 }
 .header,
@@ -38,10 +36,6 @@ body {
 }
 
 .header__logo {
-}
-
-.header__logo-image {
-  content: url(../images/logo-black.svg);
   width: 125.05px;
   height: 94.84px;
 }
@@ -103,8 +97,7 @@ address {
   letter-spacing: 0.3em;
   line-height: 1.35em;
   width: 1000px;
-  height: 667px;
-  z-index: 20;
+  height: 490.5px; 
 }
 .aligned-text {
   float: left;
@@ -136,14 +129,15 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 76px;
-  padding-right: 82px;
+  padding-left: 78px;
+  padding-right: 50px;
   width: 1fr;
   height: 1fr;
   font-size: 22px;
   /*word-spacing: 20px;*/
   word-spacing: 0.9em;
   line-height: 1.3em;
+  padding-bottom: 100px;
 }
 
 .bet-button {
@@ -154,7 +148,6 @@ address {
 }
 .lots {
   margin-bottom: 181px;
-  /*background-color: blueviolet;*/
 }
 .lots-title,
 .about__title {
@@ -243,10 +236,7 @@ article {
   /*width: 1052px;*/
   column-gap: 30.5px;
   margin-bottom: 180px;
-  /*background-color: blue;*/
-}
-.about__column {
-  /*background-color: red;*/
+  
 }
 
 .about__logo {
@@ -258,9 +248,8 @@ article {
   background-color: black;
 }
 .about__logo-image {
-  content: url(../images/logo-white.svg);
-  width: 125.05px;
-  height: 94.84px;
+  width: 136px;
+  height: 102px;
 }
 
 .about__title {
@@ -341,6 +330,7 @@ article {
   width: 48px;
   height: 48px;
 }
+/*
 .footer__img-yt {
   content: url(../images/yt.svg);
 }
@@ -350,3 +340,4 @@ article {
 .footer__img-pinterest {
   content: url(../images/pinterest.svg);
 }
+*/
