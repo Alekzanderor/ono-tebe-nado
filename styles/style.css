@@ -1,1 +1,351 @@
 /* место для вашего кода */
+body {
+  font-size: 18px;
+  max-width: 1100px;
+  width: 1110px;
+  /*background-color: green;*/
+  padding-top: 92px;
+}
+.header,
+.footer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: circle;
+  flex-direction: row;
+  gap: 28px;
+  padding-left: 50.52px;
+}
+
+.header__menu-item_active {
+  text-decoration: none;
+  /*list-style:none; не работает*/
+}
+
+.header__menu-list:nth-child(1) {
+  list-style: none; /*отключаю для первого элемента отображение буллета*/
+}
+
+.header__menu-item_non-active {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.header__logo {
+}
+
+.header__logo-image {
+  content: url(../images/logo-black.svg);
+  width: 125.05px;
+  height: 94.84px;
+}
+
+address {
+  margin: 0;
+  margin-left: 191.48px; /* в сумме с width должно давать 452px*/
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  width: 260.52px;
+  padding-right: 49.48px;
+}
+.header__adress {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+.header__adress_link {
+  vertical-align: top;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.cover {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-transform: uppercase;
+
+  width: 1100px;
+  height: 757px;
+  position: relative;
+  margin-top: 96px;
+  margin-bottom: 179px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover__title {
+  padding-left: 50px;
+  font-style: bold;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  line-height: 1.35em;
+  width: 1000px;
+  height: 667px;
+  z-index: 20;
+}
+.aligned-text {
+  float: left;
+}
+
+.aligned-text_center {
+  width: 900px;
+  text-align: center;
+  float: left;
+}
+
+.aligned-text_right {
+  padding-right: 50px;
+  width: 385px;
+  float: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+.more-letter-spacing {
+  letter-spacing: 0.6em;
+}
+.less-letter-spacing {
+  letter-spacing: 1px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 76px;
+  padding-right: 82px;
+  width: 1fr;
+  height: 1fr;
+  font-size: 22px;
+  /*word-spacing: 20px;*/
+  word-spacing: 0.9em;
+  line-height: 1.3em;
+}
+
+.bet-button {
+  border: 1px solid white;
+  padding: 12px 31px;
+  text-decoration: none;
+  word-spacing: 0.01em;
+}
+.lots {
+  margin-bottom: 181px;
+  /*background-color: blueviolet;*/
+}
+.lots-title,
+.about__title {
+  font-style: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  padding-left: 54px;
+}
+
+.lots__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-item {
+  min-height: 563px;
+  flex-basis: 334px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 40px 48px 40px;
+
+  color: white;
+  font-size: 20px;
+  font-style: bold;
+  text-decoration: none;
+}
+
+.card_title {
+  display: inline;
+
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: white;
+
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.card_img-1 {
+  background-image: url(../images/card-lot-01.jpg);
+}
+.card_img-2 {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_img-3 {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.lots__look-more-link {
+  display: inline-block;
+  border-style: none none solid none;
+  border-width: 1px;
+  padding-top: 30px;
+  margin-left: 64px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 20px;
+}
+p,
+article {
+  z-index: 10;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: 1fr 5fr;
+  height: 563px;
+  /*width: 1052px;*/
+  column-gap: 30.5px;
+  margin-bottom: 180px;
+  /*background-color: blue;*/
+}
+.about__column {
+  /*background-color: red;*/
+}
+
+.about__logo {
+  place-self: center center;
+  border-radius: 50%;
+  border-color: black;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+}
+.about__logo-image {
+  content: url(../images/logo-white.svg);
+  width: 125.05px;
+  height: 94.84px;
+}
+
+.about__title {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.about_text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.about__text-p1 {
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.about__text-p2 {
+}
+.about__text-span1 {
+  /*пафосное собрание ... антиквариатаю*/
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about__text-span2 {
+  /*Наши*/
+  letter-spacing: 0.02em;
+}
+.about__text-span3 {
+  /*были попасть*/
+  letter-spacing: -0.01em;
+}
+.about__text-span4 {
+  /*дневник*/
+  letter-spacing: 0.03em;
+}
+.about__text-span5 {
+  /*они*/
+  letter-spacing: 0.04em;
+}
+.about__text-span6 {
+  /*неудачными.*/
+  letter-spacing: 0.01em;
+}
+
+.about__align-logo {
+  justify-self: center;
+  align-self: center;
+}
+.about__align-title {
+  justify-self: start;
+  align-self: center;
+}
+.about__align-text {
+  justify-self: start;
+  align-self: start;
+}
+.footer {
+  justify-content: space-between;
+  margin-bottom: 88px;
+  padding: 0 50px;
+}
+.no-margin {
+  margin: 0px;
+}
+.footer__menu-list {
+  list-style: none;
+}
+.footer__socials {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 48px;
+}
+.footer__icon {
+  width: 48px;
+  height: 48px;
+}
+.footer__img-yt {
+  content: url(../images/yt.svg);
+}
+.footer__img-vk {
+  content: url(../images/vk.svg);
+}
+.footer__img-pinterest {
+  content: url(../images/pinterest.svg);
+}
