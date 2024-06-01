@@ -1,1 +1,1 @@
-https://github.com/Alekzanderor/ono-tebe-nado.gitgit add
+https://github.com/Alekzanderor/ono-tebe-nado.git
