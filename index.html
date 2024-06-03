@@ -12,11 +12,11 @@
   <body>
     <header class="header">
       <nav>
-        <ul class="menu-list header__menu-list">
+        <ul class="menu-list header__menu-list ">
           <li class="no-bullet">
             <a
               href="#0"
-              class="menu__menu-item_active menu__menu-item_non-active"
+              class="menu__menu-item_non-active menu__menu-item_active"
               >главная</a
             >
           </li>
@@ -106,7 +106,7 @@
                 <p>
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков<span class="card__text-span">...</span> Сколько бы вы
+                  котиков<!--В макете для следующего троеточия указан отдельный span с отличным от остального текста letter-spacing, без него не будет 100% совпадения--><span class="card__text-span">...</span> Сколько бы вы
                   на такое поставили, если бы не знали, что это — одна из
                   революционных работ Кандинского?
                 </p>
@@ -126,7 +126,7 @@
         </div>
         <h2 class="about__title about__align-title">Об аукционе</h2>
 
-        <div></div>
+        
         <div class="about__align-text">
           <div>
             <p class="about__text-intro">
@@ -158,7 +158,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="adress no-margin">
+      <address class="adress footer__adress-margin">
         <a class="adress__link" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="adress__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
@@ -182,20 +182,20 @@
       </nav>
       <ul class="footer__socials">
         <li>
-          <a
+          <a class="socials__icon"
             target="_blank"
-            href="https://stackoverflow.com/questions/2467475/text-decoration-underline-vs-border-bottom"
+            href="#0"
           >
             <img src="images/yt.svg" alt="Ссылка на Ютуб" />
           </a>
         </li>
         <li>
-          <a target="_blank" href="#0">
+          <a class="socials__icon" target="_blank" href="#0">
             <img src="images/vk.svg" alt="Ссылка на Вконтакте" />
           </a>
         </li>
         <li>
-          <a target="_blank" href="#0">
+          <a class="socials__icon" target="_blank" href="#0">
             <img src="images/pinterest.svg" alt="Ссылка на Пинтерест" />
           </a>
         </li>

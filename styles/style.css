@@ -29,10 +29,6 @@ body {
   gap: 31px;
 }
 
-.menu__menu-item_active {
-  text-decoration: none;
-}
-
 .no-bullet {
   list-style: none;
 }
@@ -41,6 +37,11 @@ body {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   width: fit-content;
+}
+
+.menu__menu-item_active {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .header__logo {
@@ -106,30 +107,32 @@ address {
   flex-wrap: wrap;
 
   padding-left: 50px;
-  margin-top: 98px;
+  margin-top: 160px; /*98px*/
   font-style: bold;
   font-size: 100px;
   letter-spacing: 0.3em;
-  line-height: 2.5em;
+  /*line-height: 2.5em;*/
   width: 1100px;
-  margin-bottom: 15px;
-
+  /*margin-bottom: 15px;*/
+  margin-bottom: 4%;
+  /*position: absolute;*/
   z-index: 10;
 }
 
 .aligned-text-left {
   width: 1100px;
+  margin-bottom: 0px;
 }
 
 .aligned-text_center {
   width: 975px;
   text-align: center;
   word-spacing: 3em;
-  line-height: 0.00001em;
+  line-height: .6em;
 }
 
 .aligned-text_right {
-  line-height: 2.4em;
+  line-height: .9em;
   width: 1000px;
   text-align: right;
 }
@@ -152,8 +155,7 @@ address {
   align-items: center;
   margin-left: 78px;
   margin-right: 50px;
-  width: 100%;
-  min-height: 150px;
+  width: 100%;  
   font-size: 22px;
   /*word-spacing: 20px;*/
   word-spacing: 0.85em;
@@ -246,12 +248,8 @@ address {
 }
 
 .card__text-span {
-  /*...*/
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.13em;
-  text-align: left;
+  /*...*/  
+  letter-spacing: 0.13em;  
 }
 
 .card__img-film {
@@ -290,7 +288,6 @@ h4 {
   display: grid;
   grid-template-columns: 334px 1fr;
   grid-template-rows: 1fr 100%;
-  min-height: 563px;
   column-gap: 25px;
   margin-bottom: 150px;
   margin-left: 25px;
@@ -305,6 +302,9 @@ h4 {
   width: 240px;
   height: 240px;
   background-color: black;
+  /*grid-row-start: 1;
+  grid-row-end: 2;*/
+
 }
 
 .about__logo-image {
@@ -377,6 +377,8 @@ h4 {
 }
 
 .about__align-text {
+  grid-column-start: 2;
+  
   justify-self: start;
   align-self: start;
 }
@@ -384,17 +386,18 @@ h4 {
 .footer {
   justify-content: space-between;
   margin-bottom: 88px;
-  padding: 0 50px;
+  padding: 0 49px;
 }
 
-.no-margin {
+.footer__adress-margin {
   margin: 0px;
-  padding-top: 26px;
+  margin-top: 30px;
+  /*margin-left: 1px;*/
 }
 
 .footer__menu-list {
   text-align: center;
-  margin-right: 70px;
+  margin-right: 60px;
 }
 
 .footer__socials {
@@ -403,6 +406,12 @@ h4 {
   list-style: none;
   gap: 50px;
   padding: 0;
-  margin: 0 0 20px 0;
-  width: 240px;
+  margin: 0 0 0 0;
+}
+
+.socials__icon {
+  display: block;
+  width: 48px;
+  margin-bottom: 11px;
+  
 }
